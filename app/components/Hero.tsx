@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setStartAnimation(true);
-    }, 1000);
+    }, 500); // Délai réduit pour commencer l'animation plus tôt
 
     return () => clearTimeout(timer);
   }, []);

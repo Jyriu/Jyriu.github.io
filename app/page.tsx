@@ -27,7 +27,7 @@ export default function Home() {
       </AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: showWelcome ? 0 : 1 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <Header />
